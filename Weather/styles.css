@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #f0f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Weather Container */
+  .weather-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .weather-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #4e9bff;
+    font-weight: 600;
+  }
+  
+  /* Input Field */
+  #city {
+    padding: 12px;
+    font-size: 1.2rem;
+    width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  #city:focus {
+    border-color: #4e9bff;
+  }
+  
+  /* Button */
+  #getWeatherBtn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #4e9bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #getWeatherBtn:hover {
+    background-color: #3578e5;
+  }
+  
+  /* Weather Information */
+  #weatherDisplay {
+    margin-top: 30px;
+    display: none;
+  }
+  
+  #weatherDisplay h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #weatherDisplay p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  #temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5c5c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .weather-container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    #city {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    #getWeatherBtn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    #weatherDisplay h2 {
+      font-size: 1.6rem;
+    }
+  
+    #weatherDisplay p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,124 @@
+/* General Body and Background Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container Styling */
+.app-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Dropdown Styling */
+select {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-top: 20px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+/* Button Styling */
+button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* Quote Display Box */
+#quoteDisplay {
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 1.5rem;
+  color: #333;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 10px solid #4CAF50;
+  transition: 0.3s ease;
+}
+
+#quoteDisplay p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  select, button {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  #quoteDisplay {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  select, button {
+    font-size: 0.9rem;
+  }
+}
